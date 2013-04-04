@@ -9,7 +9,6 @@ class RestQuery
     public static function get ($id = null)
     {
         $class = get_called_class();
-        print_r($class);exit;
         if (isset($class)) {
             $mode = $class::$__name;
             $params = $class::getAttributes();
